@@ -36,6 +36,10 @@ header h1{
 
 }
 
+.card{
+    box-shadow: 0rem 0rem 0.4rem 0rem #E1E1E1;
+}
+
 /* Styling for the navbar links */
 .a {
     color: white;
