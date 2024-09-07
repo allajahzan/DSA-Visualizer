@@ -24,20 +24,37 @@
 
             <div class="collapse navbar-collapse justify-content-start mt-2" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item a">
-                        <a class="nav-link" href="index.html">Data Structures</a>
+                    <li class="nav-item a" onclick="getIndex()">
+                        <a class="nav-link">Data Structures</a>
+                        <div class="underline "></div>
+                        
+                    </li>
+                    <li class="nav-item a" onclick="getCompiler()">
+                        <a class="nav-link">Compiler</a>
                         <div class="underline"></div>
                     </li>
-                    <li class="nav-item a">
-                        <a class="nav-link" href="compiler.html">Compiler</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item a">
-                        <a class="nav-link" href="topics.html">DSA Topics</a>
+                    <li class="nav-item a" onclick="getTopic()">
+                        <a class="nav-link">DSA Topics</a>
                         <div class="underline"></div>
                     </li>
                 </ul>
             </div>
+
+            <script>
+
+              function getIndex(){
+                window.location.href = 'https://dsabrototype.vercel.app'
+              }
+
+              function getCompiler(){
+                window.location.href = 'https://dsabrototype.vercel.app/compiler.html'
+              }
+
+              function getTopic(){
+                window.location.href = 'https://dsabrototype.vercel.app/topics.html'
+              }
+
+            </script>
 
             <div class="collapse navbar-collapse justify-content-end mt-2" id="navbarNavDropdown">
                 <div class="dropdown">
