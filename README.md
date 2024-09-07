@@ -3,7 +3,7 @@ And i have made this using Html, CSS and JavaScript.
 
 * Visual Respresentation
 
-* js Compiler
+* JS Compiler
 
 * Key Topics PDFs
 
