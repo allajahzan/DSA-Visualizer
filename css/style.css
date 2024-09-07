@@ -1,0 +1,1029 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    /* scrollbar-width: thin; */
+    scrollbar-width: none;
+}
+
+/* navbar */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1{
+    position: relative;
+    top: 10px;
+}
+.nav {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: rgb(27, 27, 83); */
+    background-color: black;
+    /* padding: 20px;
+    padding-bottom: 12px; */
+    
+}
+
+
+.navbar{
+    background-color: black;
+    box-shadow: 0rem 0rem 0.4rem 0rem rgba(44, 44, 44, 0.605);
+
+}
+
+/* Styling for the navbar links */
+.a {
+    color: white;
+    padding: 0px 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+
+.underline {
+    height: 1.5px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: white;
+    visibility: hidden;
+    transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.line{
+    height: 1.5px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: white;
+    width: 50px;
+}
+
+/* Change the color of links on hover */
+.a:hover .underline {
+    visibility: visible;
+    width: 50px;
+    transform: translateX(2);
+}
+
+/* Hide the burger menu by default */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+/* Show the links when the screen size is large */
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide the navbar links by default on small screens */
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+
+/* array visual repersentaion =====================*/
+
+.array_area {
+    height: 100px;
+}
+
+.array_body {
+    padding: 2.4px;
+    /* width: 240px; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    /* color: rgb(247, 128, 43); */
+
+}
+
+.index {
+    background-color: white;
+    padding: 20px;
+    width: 57px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.array_body1 {
+    position: relative;
+    top: -35px;
+    padding: 0px;
+    width: 121.2px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.ind {
+    background-color: transparent;
+    padding: 25px;
+    font-weight: 500;
+}
+
+/* basic operations form */
+
+input {
+    padding: 4px;
+    padding-left: 6px;
+    font-size: 15px;
+    width: 60px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+input[type='submit'] {
+    padding: 5px;
+    width: 100px;
+    color: white;
+    /* background-color: rgb(27, 27, 83); */
+    background-color: black;
+    border: none;
+    border-color: lightgrey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type='submit']:hover{
+    background-color: rgb(30, 30, 30);
+}
+
+.special_operation_btn{
+    padding: 9px;
+    width: 100px;
+    color: white;
+    /* background-color: rgb(27, 27, 83); */
+    background-color: black;
+    border: none;
+    border-color: lightgrey;
+    border-radius: 4px;
+}
+
+a{
+    cursor: pointer;
+}
+
+/* compiler =========================================== */
+
+.container1 {
+    display: flex;
+    height: 89.6vh;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: black;
+
+}
+
+.editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    background-color: white
+}
+
+textarea {
+    flex: 1;
+    width: 98.7%;
+    padding: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid rgb(37, 37, 37);;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-family: monospace;
+    font-size: 17px;
+    line-height: 1.5rem;
+    resize: none;
+    transition: border-color 0.3s ease;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+
+.CodeMirror {
+    width: 100%;
+    height: 79.6vh;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 17px;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(37, 37, 37);
+}
+
+
+.CodeMirror-vscrollbar {
+    scrollbar-width: thin;
+    overflow-y: hidden;
+}
+
+.CodeMirror-hscrollbar {
+    scrollbar-width: thin;
+    overflow-y: hidden;
+}
+
+.CodeMirror-scroll{
+    /* width: 100%; */
+    height: 80.2vh;
+}
+
+.code-container {
+    display: flex;
+    width: 100%;
+    height: 79.6vh;
+}
+
+.btn_compiler {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+    /* background-color: rgb(27, 27, 83); */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.btn_compiler:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.output {
+    flex: 1;
+    padding: 10px;
+    background-color: white
+}
+
+#outputContent {
+    background-color: rgb(37, 37, 37);
+    /* background-color: rgb(57, 57, 57); ; */
+    color: white;
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    height: 79.6vh;
+    /* Full height minus padding */
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+
+/* stack visual representaion */
+
+
+.stack {
+    background-color: white;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-bottom: solid;
+    border-color: black;
+    font-weight: 500;
+}
+
+.stack_body {
+    padding: 2.4px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    height: 116px;
+}
+
+
+/* stack with queue part */
+
+/* queue1 */
+.stack_with_queue{
+    display: none;
+}
+
+.with_queue_index {
+    background-color: white;
+    padding: 20px;
+    width: 57px;
+    text-align: center;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+.with_queue_ind {
+    background-color: transparent;
+    padding: 25px;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+.array_index_body_with_queue {
+    position: relative;
+    top:7px;
+    padding: 0px;
+    width: 121.2px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+/* queue2 */
+
+.with_queue_ind1 {
+    background-color: transparent;
+    padding: 25px;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+
+.with_queue_index1 {
+    background-color: white;
+    padding: 20px;
+    width: 57px;
+    height: 64px;
+    text-align: center;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+.array_index_body_with_queue1{
+    position: relative;
+    top:5px;
+    padding: 0px;
+    width: 61.6px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-weight: 500;
+}
+
+input{
+    font-weight: 500;
+}
+
+#array_box_queue1{
+   width: 61.6px;
+}
+
+
+/* note pad */
+
+#note_pad_div{
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
+
+#note_pad_div1{
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
+
+/* #note_pad p{
+    margin-bottom: 0px;
+}
+
+#note_pad1 p{
+    margin-bottom: 0px;
+} */
+
+
+/* sorting */
+
+.sort_value_div{
+    height: 100px; 
+    width: 52px; 
+    background-color: rgb(202, 202, 202);
+    /* background-color: rgb(173, 216, 230); */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-left: 3px; 
+    margin-right: 3px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* font-size: 16px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+
+}
+
+.sort_index_div{
+    margin-left: 3px; 
+    margin-right: 3px; 
+    height: 40px; 
+    width: 52px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-size: 16px; */
+    font-weight: 500;
+}
+
+.sorting_btn{
+    padding: 5px;
+    width: 100px;
+    color: white;
+    /* background-color: rgb(27, 27, 83); */
+    background-color: black;
+    border: none;
+    border-color: lightgrey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* tree ============= */
+
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    list-style-type: none;
+    transition: all 0.5s;
+}
+
+.tree li {
+    position: relative;
+    left: -16px;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+.tree li::before,
+.tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 3px solid black;
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 3px solid black;
+}
+
+.tree li:only-child::after,
+.tree li:only-child::before {
+    display: none;
+}
+
+.tree li:only-child {
+    padding-top: 0;
+}
+
+.tree li:first-child::before,
+.tree li:last-child::after {
+    border: 0 none;
+}
+
+.tree li:last-child::before {
+    border-right: 3px solid black;
+    border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+.tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 3px solid black;
+    width: 0;
+    height: 20px;
+}
+
+/* new class */
+.tree li.custom-color::before,
+.tree li.custom-color::after {
+ border-color: black;
+ opacity: 1;
+}
+
+.tree li.custom-color1::before,
+.tree li.custom-color1::after {
+ border-color: black;
+ opacity: .2;
+}
+
+.tree ul.custom-color1::before,
+.tree li.custom-color1::after {
+    border-color: black;
+    opacity: 1;
+}
+
+.tree ul.custom-color1::before,
+.tree li.custom-color1::after {
+    border-color: black;
+    opacity: .2;
+}
+
+.tree .ul.custom-color::before,
+.tree .li.custom-color::after
+{
+    border-color: black;
+    opacity: 1;
+}
+
+
+.node {
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background: rgb(237, 237, 237);
+    color: black;
+    border: 3px solid black;
+    width: 60px;
+    height: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+
+/* binary tree */
+
+.bt-tree ul {
+    padding-top: 20px;
+    position: relative;
+    list-style-type: none;
+    transition: all 0.5s;
+}
+
+.bt-tree li {
+    position: relative;
+    left: -16px;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+.bt-tree li::before,
+.bt-tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 3px solid black;
+    width: 50%;
+    height: 20px;
+}
+
+.bt-tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 3px solid black;
+}
+
+.bt-tree li:only-child::after,
+.bt-tree li:only-child::before {
+    display: none;
+}
+
+.bt-tree li:only-child {
+    padding-top: 0;
+}
+
+.bt-tree li:first-child::before,
+.bt-tree li:last-child::after {
+    border: 0 none;
+}
+
+.bt-tree li:last-child::before {
+    border-right: 3px solid black;
+    border-radius: 0 5px 0 0;
+}
+
+.bt-tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+.bt-tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 3px solid black;
+    width: 0;
+    height: 20px;
+}
+
+/* new class */
+.bt-tree li.custom-color::before,
+.bt-tree li.custom-color::after {
+ border-color: black;
+ opacity: 1;
+}
+
+.bt-tree li.custom-color1::before,
+.bt-tree li.custom-color1::after {
+ border-color: black;
+ opacity: .2;
+}
+
+.bt-tree ul.custom-color1::before,
+.bt-tree li.custom-color1::after {
+    border-color: black;
+    opacity: 1;
+}
+
+.bt-tree ul.custom-color1::before,
+.bt-tree li.custom-color1::after {
+    border-color: black;
+    opacity: .2;
+}
+
+.bt-tree .ul.custom-colorrr::before,
+.bt-tree .li.custom-colorrr::after
+{
+    border-color: black;
+    opacity: 1;
+}
+
+.bt-tree .li.custom-colorrr:last-child::before {
+    border-right: 0px solid black;
+    opacity: 1;
+}
+
+.bt-tree .hight.custom-colorrrr::before{
+    border-color: black;
+    opacity: 1;
+}
+
+.bt-tree .hight.custom-colorrrr:last-child::before{
+    border-color: black;
+    opacity: 1;
+}
+
+
+.bt-node{
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background: rgb(237, 237, 237);
+    color: black;
+    border: 3px solid black;
+    width: 60px;
+    height: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+
+
+/* binary search tree */
+
+.bst-tree ul {
+    padding-top: 20px;
+    position: relative;
+    list-style-type: none;
+    transition: all 0.5s;
+}
+
+.bst-tree li {
+    position: relative;
+    left: -16px;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+.bst-tree li::before,
+.bst-tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 3px solid black;
+    width: 50%;
+    height: 20px;
+}
+
+.bst-tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 3px solid black;
+}
+
+.bst-tree li:only-child::after,
+.bst-tree li:only-child::before {
+    display: none;
+}
+
+.bst-tree li:only-child {
+    padding-top: 0;
+}
+
+.bst-tree li:first-child::before,
+.bst-tree li:last-child::after {
+    border: 0 none;
+}
+
+.bst-tree li:last-child::before {
+    border-right: 3px solid black;
+    border-radius: 0 5px 0 0;
+}
+
+.bst-tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+.bst-tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 3px solid black;
+    width: 0;
+    height: 20px;
+}
+
+/* new class */
+.bst-tree li.custom-color::before,
+.bst-tree li.custom-color::after {
+ border-color: black;
+ opacity: 1;
+}
+
+.bst-tree li.custom-color1::before,
+.bst-tree li.custom-color1::after {
+ border-color: black;
+ opacity: .2;
+}
+
+.bst-tree ul.custom-color1::before,
+.bst-tree li.custom-color1::after {
+    border-color: black;
+    opacity: 1;
+}
+
+.bst-tree ul.custom-color1::before,
+.bst-tree li.custom-color1::after {
+    border-color: black;
+    opacity: .2;
+}
+
+.bst-tree .ul.custom-colorrr::before,
+.bst-tree .li.custom-colorrr::after
+{
+    border-color: black;
+    opacity: 1;
+}
+
+.bst-tree .li.custom-colorrr:last-child::before {
+    border-right: 0px solid black;
+    opacity: 1;
+}
+
+.bst-tree .hight.custom-colorrrr::before{
+    border-color: black;
+    opacity: 1;
+}
+
+.bst-tree .hight.custom-colorrrr:last-child::before{
+    border-color: black;
+    opacity: 1;
+}
+
+
+.bst-node{
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background: rgb(237, 237, 237);
+    color: black;
+    border: 3px solid black;
+    width: 60px;
+    height: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+/* .node:hover {
+    background: orange;
+    border-color: black;
+} */
+
+
+/* radion input in tree */
+
+.radio input[type="radio"] {
+    opacity: 0;
+    position: absolute; 
+    z-index: 5;
+    top: 0px;
+    left: 10px;
+    cursor: pointer;
+    height: -webkit-fill-available;
+}
+
+
+.radio {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.radio input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+
+.radio input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.radio input[type="radio"]:checked + label::before {
+    background-color: black;
+    border-color: black;
+    border: 10px solid black;
+}
+
+.radio input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 76%;
+    background: white;
+}
+
+
+
+label{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* radios */
+.radios input[type="radio"] {
+    opacity: 0;
+    position: absolute; 
+    z-index: 5;
+    top: 24px;
+    left: 30px;
+    width: 20px;
+    cursor: pointer;
+    height: -webkit-fill-available;
+}
+
+
+.radios {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.radios input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+
+.radios input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.radios input[type="radio"]:checked + label::before {
+    background-color: black;
+    border-color: black;
+    border: 10px solid black;
+}
+
+.radios input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 6.6px;
+    left: 6.5px;
+    width: 7.5px;
+    height: 7px;
+    border-radius: 76%;
+    background: white;
+}

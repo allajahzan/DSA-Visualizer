@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Hacker - compiler</title>
+    <script src="https://kit.fontawesome.com/176e14c7a2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material-darker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color:  rgb(255, 255, 255);" onload="onloadPage()">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; position: relative; top: -1px;"
+                class="navbar-brand" href="#">JS Hacker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i style="color: white;" class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-start mt-2" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item a">
+                        <a class="nav-link" href="index.html">Data Structures</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item a">
+                        <a class="nav-link" href="compiler.html">Compiler</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item a">
+                        <a class="nav-link" href="topics.html">DSA Topics</a>
+                        <div class="underline"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- container for editor and ouput -->
+    <div class="container1">
+        <div class="editor">
+            <div
+                style="display: flex; background-color: rgb(229, 229, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; position: relative; ">
+                <!-- <img style="width: 34px; position: absolute; top: 12px; left: 8px;" src="/js.png" alt=""> -->
+                <p style="padding-left: 15px; padding-top: 12px; position: relative; top: 3px;">JavaScript Compiler</p>
+                <button class="btn_compiler" onclick="runCode()"><i
+                        class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Run</button>
+            </div>
+            <div class="code-container">
+                <!-- <div class="line-numbers" id="lineNumbers"></div> -->
+                <textarea onkeyup="getCode()" id="codeEditor" oninput="updateLineNumbers()"
+                    onscroll="syncScroll()"></textarea>
+            </div>
+        </div>
+
+        <div class="output">
+            <div
+                style="display: flex; background-color: rgb(229, 229, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; position: relative;">
+                <p style="padding-left: 12px; padding-top: 12px; position: relative; top: 3px;"><i
+                        class="fa-solid fa-terminal"></i>&nbsp;&nbsp;Console</p>
+                <button class="btn_compiler" onclick="clearOutPut()">Clear</button>
+            </div>
+            <div style="color: #ccc;" id="outputContent">Output will be shown here...</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/javascript-hint.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.css">
+    <script src="javascript/compiler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
