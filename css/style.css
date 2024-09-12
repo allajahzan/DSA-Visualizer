@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    overflow: hidden;
 }
 
 html {
@@ -9,15 +10,16 @@ html {
 }
 
 /* navbar */
-header{
+header {
     display: flex;
     justify-content: space-between;
 }
 
-header h1{
+header h1 {
     position: relative;
     top: 10px;
 }
+
 .nav {
     display: flex;
     /* justify-content: space-between; */
@@ -26,17 +28,17 @@ header h1{
     background-color: black;
     /* padding: 20px;
     padding-bottom: 12px; */
-    
+
 }
 
 
-.navbar{
+.navbar {
     background-color: black;
     box-shadow: 0rem 0rem 0.4rem 0rem rgba(44, 44, 44, 0.605);
 
 }
 
-.card{
+.card {
     box-shadow: 0rem 0rem 0.4rem 0rem #E1E1E1;
 }
 
@@ -56,11 +58,11 @@ header h1{
     align-items: center;
 }
 
-.nav-link{
+.nav-link {
     color: white;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: white;
 }
 
@@ -74,7 +76,7 @@ header h1{
     transition: width 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
 }
 
-.line{
+.line {
     height: 1.5px;
     width: 10px;
     border-radius: 100px;
@@ -137,7 +139,7 @@ header h1{
 
 .array_body {
     padding: 2.4px;
-    /* width: 240px; */
+    width: 240px;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -194,11 +196,11 @@ input[type='submit'] {
     cursor: pointer;
 }
 
-input[type='submit']:hover{
+input[type='submit']:hover {
     background-color: rgb(30, 30, 30);
 }
 
-.special_operation_btn{
+.special_operation_btn {
     padding: 9px;
     width: 100px;
     color: white;
@@ -209,7 +211,7 @@ input[type='submit']:hover{
     border-radius: 4px;
 }
 
-a{
+a {
     cursor: pointer;
 }
 
@@ -244,7 +246,8 @@ textarea {
     padding: 0px;
     padding-top: 10px;
     padding-left: 10px;
-    border: 1px solid rgb(37, 37, 37);;
+    border: 1px solid rgb(37, 37, 37);
+    ;
     border-radius: 4px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -282,7 +285,7 @@ textarea {
     overflow-y: hidden;
 }
 
-.CodeMirror-scroll{
+.CodeMirror-scroll {
     /* width: 100%; */
     height: 80.2vh;
 }
@@ -367,7 +370,7 @@ textarea {
 /* stack with queue part */
 
 /* queue1 */
-.stack_with_queue{
+.stack_with_queue {
     display: none;
 }
 
@@ -389,7 +392,7 @@ textarea {
 
 .array_index_body_with_queue {
     position: relative;
-    top:7px;
+    top: 7px;
     padding: 0px;
     width: 121.2px;
     display: flex;
@@ -418,9 +421,9 @@ textarea {
     font-weight: 500;
 }
 
-.array_index_body_with_queue1{
+.array_index_body_with_queue1 {
     position: relative;
-    top:5px;
+    top: 5px;
     padding: 0px;
     width: 61.6px;
     display: flex;
@@ -429,24 +432,24 @@ textarea {
     font-weight: 500;
 }
 
-input{
+input {
     font-weight: 500;
 }
 
-#array_box_queue1{
-   width: 61.6px;
+#array_box_queue1 {
+    width: 61.6px;
 }
 
 
 /* note pad */
 
-#note_pad_div{
+#note_pad_div {
     position: absolute;
     right: 0px;
     bottom: 30px;
 }
 
-#note_pad_div1{
+#note_pad_div1 {
     position: absolute;
     right: 0px;
     bottom: 30px;
@@ -463,15 +466,15 @@ input{
 
 /* sorting */
 
-.sort_value_div{
-    height: 100px; 
-    width: 52px; 
+.sort_value_div {
+    height: 100px;
+    width: 45px;
     background-color: rgb(202, 202, 202);
     /* background-color: rgb(173, 216, 230); */
     display: flex;
     align-items: end;
     justify-content: center;
-    margin-left: 3px; 
+    margin-left: 3px;
     margin-right: 3px;
     color: black;
     padding-top: 10px;
@@ -479,15 +482,16 @@ input{
     /* font-size: 16px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    transition: background-color 0.5s ease; /* Adjust the duration as needed */
+    transition: background-color 0.5s ease;
+    /* Adjust the duration as needed */
 
 }
 
-.sort_index_div{
-    margin-left: 3px; 
-    margin-right: 3px; 
-    height: 40px; 
-    width: 52px; 
+.sort_index_div {
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 40px;
+    width: 45px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -497,7 +501,7 @@ input{
     font-weight: 500;
 }
 
-.sorting_btn{
+.sorting_btn {
     padding: 5px;
     width: 100px;
     color: white;
@@ -583,14 +587,14 @@ input{
 /* new class */
 .tree li.custom-color::before,
 .tree li.custom-color::after {
- border-color: black;
- opacity: 1;
+    border-color: black;
+    opacity: 1;
 }
 
 .tree li.custom-color1::before,
 .tree li.custom-color1::after {
- border-color: black;
- opacity: .2;
+    border-color: black;
+    opacity: .2;
 }
 
 .tree ul.custom-color1::before,
@@ -606,8 +610,7 @@ input{
 }
 
 .tree .ul.custom-color::before,
-.tree .li.custom-color::after
-{
+.tree .li.custom-color::after {
     border-color: black;
     opacity: 1;
 }
@@ -702,14 +705,14 @@ input{
 /* new class */
 .bt-tree li.custom-color::before,
 .bt-tree li.custom-color::after {
- border-color: black;
- opacity: 1;
+    border-color: black;
+    opacity: 1;
 }
 
 .bt-tree li.custom-color1::before,
 .bt-tree li.custom-color1::after {
- border-color: black;
- opacity: .2;
+    border-color: black;
+    opacity: .2;
 }
 
 .bt-tree ul.custom-color1::before,
@@ -725,8 +728,7 @@ input{
 }
 
 .bt-tree .ul.custom-colorrr::before,
-.bt-tree .li.custom-colorrr::after
-{
+.bt-tree .li.custom-colorrr::after {
     border-color: black;
     opacity: 1;
 }
@@ -736,18 +738,18 @@ input{
     opacity: 1;
 }
 
-.bt-tree .hight.custom-colorrrr::before{
+.bt-tree .hight.custom-colorrrr::before {
     border-color: black;
     opacity: 1;
 }
 
-.bt-tree .hight.custom-colorrrr:last-child::before{
+.bt-tree .hight.custom-colorrrr:last-child::before {
     border-color: black;
     opacity: 1;
 }
 
 
-.bt-node{
+.bt-node {
     padding: 15px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -837,14 +839,14 @@ input{
 /* new class */
 .bst-tree li.custom-color::before,
 .bst-tree li.custom-color::after {
- border-color: black;
- opacity: 1;
+    border-color: black;
+    opacity: 1;
 }
 
 .bst-tree li.custom-color1::before,
 .bst-tree li.custom-color1::after {
- border-color: black;
- opacity: .2;
+    border-color: black;
+    opacity: .2;
 }
 
 .bst-tree ul.custom-color1::before,
@@ -860,8 +862,7 @@ input{
 }
 
 .bst-tree .ul.custom-colorrr::before,
-.bst-tree .li.custom-colorrr::after
-{
+.bst-tree .li.custom-colorrr::after {
     border-color: black;
     opacity: 1;
 }
@@ -871,18 +872,18 @@ input{
     opacity: 1;
 }
 
-.bst-tree .hight.custom-colorrrr::before{
+.bst-tree .hight.custom-colorrrr::before {
     border-color: black;
     opacity: 1;
 }
 
-.bst-tree .hight.custom-colorrrr:last-child::before{
+.bst-tree .hight.custom-colorrrr:last-child::before {
     border-color: black;
     opacity: 1;
 }
 
 
-.bst-node{
+.bst-node {
     padding: 15px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -907,7 +908,7 @@ input{
 
 .radio input[type="radio"] {
     opacity: 0;
-    position: absolute; 
+    position: absolute;
     z-index: 5;
     top: 0px;
     left: 10px;
@@ -925,7 +926,7 @@ input{
 }
 
 
-.radio input[type="radio"] + label {
+.radio input[type="radio"]+label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
@@ -933,7 +934,7 @@ input{
 }
 
 
-.radio input[type="radio"] + label::before {
+.radio input[type="radio"]+label::before {
     content: "";
     position: absolute;
     top: 0;
@@ -946,13 +947,13 @@ input{
     cursor: pointer;
 }
 
-.radio input[type="radio"]:checked + label::before {
+.radio input[type="radio"]:checked+label::before {
     background-color: black;
     border-color: black;
     border: 10px solid black;
 }
 
-.radio input[type="radio"]:checked + label::after {
+.radio input[type="radio"]:checked+label::after {
     content: "";
     position: absolute;
     top: 7px;
@@ -965,7 +966,7 @@ input{
 
 
 
-label{
+label {
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -974,7 +975,7 @@ label{
 /* radios */
 .radios input[type="radio"] {
     opacity: 0;
-    position: absolute; 
+    position: absolute;
     z-index: 5;
     top: 24px;
     left: 30px;
@@ -993,7 +994,7 @@ label{
 }
 
 
-.radios input[type="radio"] + label {
+.radios input[type="radio"]+label {
     position: relative;
     padding-left: 30px;
     cursor: pointer;
@@ -1002,7 +1003,7 @@ label{
 }
 
 
-.radios input[type="radio"] + label::before {
+.radios input[type="radio"]+label::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1015,13 +1016,13 @@ label{
     cursor: pointer;
 }
 
-.radios input[type="radio"]:checked + label::before {
+.radios input[type="radio"]:checked+label::before {
     background-color: black;
     border-color: black;
     border: 10px solid black;
 }
 
-.radios input[type="radio"]:checked + label::after {
+.radios input[type="radio"]:checked+label::after {
     content: "";
     position: absolute;
     top: 6.6px;
@@ -1030,4 +1031,80 @@ label{
     height: 7px;
     border-radius: 76%;
     background: white;
+}
+
+
+/* linked list */
+
+.linked-list {
+    display: flex;
+    align-items: center;
+}
+
+.oneNode {
+    background-color: #e6e6e6;
+    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 3px solid black;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+.value {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.arrow {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+
+
+#message {
+    display: none;
+}
+
+@media (max-width: 1300px),
+(max-height:600px) {
+    #content {
+        display: none;
+    }
+
+    #message {
+        display: flex;
+        height: 90vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+@media (min-width: 1280px) and (min-height:800px) {
+    #content {
+        display: block;
+    }
+
+    #message {
+        display: none;
+    }
 }

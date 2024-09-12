@@ -32,7 +32,7 @@
                     <li class="nav-item a" onclick="getIndex()">
                         <a class="nav-link">Data Structures</a>
                         <div class="underline "></div>
-                        
+
                     </li>
                     <li class="nav-item a" onclick="getCompiler()">
                         <a class="nav-link">Compiler</a>
@@ -47,49 +47,58 @@
 
             <script>
 
-              function getIndex(){
-                window.location.href = 'https://dsabrototype.vercel.app'
-              }
+                function getIndex() {
+                    window.location.href = 'https://dsabrototype.vercel.app'
+                }
 
-              function getCompiler(){
-                window.location.href = 'https://dsabrototype.vercel.app/compiler.html'
-              }
+                function getCompiler() {
+                    window.location.href = 'https://dsabrototype.vercel.app/compiler.html'
+                }
 
-              function getTopic(){
-                window.location.href = 'https://dsabrototype.vercel.app/topics.html'
-              }
+                function getTopic() {
+                    window.location.href = 'https://dsabrototype.vercel.app/topics.html'
+                }
 
             </script>
         </div>
     </nav>
 
-    <!-- container for editor and ouput -->
-    <div class="container1">
-        <div class="editor">
-            <div
-                style="display: flex; background-color: rgb(229, 229, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; position: relative; ">
-                <!-- <img style="width: 34px; position: absolute; top: 12px; left: 8px;" src="/js.png" alt=""> -->
-                <p style="padding-left: 15px; padding-top: 12px; position: relative; top: 3px;">JavaScript Compiler</p>
-                <button class="btn_compiler" onclick="runCode()"><i
-                        class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Run</button>
+    <section id="message">
+        <h4 style="text-align: center;">Please make the window wider for a better user experience</h4>
+    </section>
+
+    <section id="content">
+
+        <!-- container for editor and ouput -->
+        <div class="container1">
+            <div class="editor">
+                <div
+                    style="display: flex; background-color: rgb(229, 229, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; position: relative; ">
+                    <!-- <img style="width: 34px; position: absolute; top: 12px; left: 8px;" src="/js.png" alt=""> -->
+                    <p style="padding-left: 15px; padding-top: 12px; position: relative; top: 3px;">JavaScript Compiler
+                    </p>
+                    <button class="btn_compiler" onclick="runCode()"><i
+                            class="fa-solid fa-play"></i>&nbsp;&nbsp;&nbsp;Run</button>
+                </div>
+                <div class="code-container">
+                    <!-- <div class="line-numbers" id="lineNumbers"></div> -->
+                    <textarea onkeyup="getCode()" id="codeEditor" oninput="updateLineNumbers()"
+                        onscroll="syncScroll()"></textarea>
+                </div>
             </div>
-            <div class="code-container">
-                <!-- <div class="line-numbers" id="lineNumbers"></div> -->
-                <textarea onkeyup="getCode()" id="codeEditor" oninput="updateLineNumbers()"
-                    onscroll="syncScroll()"></textarea>
+
+            <div class="output">
+                <div
+                    style="display: flex; background-color: rgb(229, 229, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; position: relative;">
+                    <p style="padding-left: 12px; padding-top: 12px; position: relative; top: 3px;"><i
+                            class="fa-solid fa-terminal"></i>&nbsp;&nbsp;Console</p>
+                    <button class="btn_compiler" onclick="clearOutPut()">Clear</button>
+                </div>
+                <div style="color: #ccc;" id="outputContent">Output will be shown here...</div>
             </div>
         </div>
 
-        <div class="output">
-            <div
-                style="display: flex; background-color: rgb(229, 229, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; position: relative;">
-                <p style="padding-left: 12px; padding-top: 12px; position: relative; top: 3px;"><i
-                        class="fa-solid fa-terminal"></i>&nbsp;&nbsp;Console</p>
-                <button class="btn_compiler" onclick="clearOutPut()">Clear</button>
-            </div>
-            <div style="color: #ccc;" id="outputContent">Output will be shown here...</div>
-        </div>
-    </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>

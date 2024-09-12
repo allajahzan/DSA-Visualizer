@@ -2,132 +2,135 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA Visualizer</title>
-    <link rel="shortcut icon" href="images/icon1.jpeg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/176e14c7a2.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Visualizer</title>
+  <link rel="shortcut icon" href="images/icon1.jpeg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/176e14c7a2.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body onload="loadPage()">
 
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
-            <a style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; position: relative; top: -1px;"
-                class="navbar-brand" href="#">DSA Visualizer</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i style="color: white;" class="fa-solid fa-bars"></i>
-            </button>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; position: relative; top: -1px;"
+        class="navbar-brand" href="#">DSA Visualizer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i style="color: white;" class="fa-solid fa-bars"></i>
+      </button>
 
-            <div class="collapse navbar-collapse justify-content-start mt-2" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                  <li class="nav-item a" onclick="getIndex()">
-                      <a class="nav-link">Data Structures</a>
-                      <div class="line "></div>
-                      
-                  </li>
-                  <li class="nav-item a" onclick="getCompiler()">
-                      <a class="nav-link">Compiler</a>
-                      <div class="underline"></div>
-                  </li>
-                  <li class="nav-item a" onclick="getTopic()">
-                      <a class="nav-link">DSA Topics</a>
-                      <div class="underline"></div>
-                  </li>
-              </ul>
-          </div>
+      <div class="collapse navbar-collapse justify-content-start mt-2" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item a" onclick="getIndex()">
+            <a class="nav-link">Data Structures</a>
+            <div class="line "></div>
 
-          <script>
+          </li>
+          <li class="nav-item a" onclick="getCompiler()">
+            <a class="nav-link">Compiler</a>
+            <div class="underline"></div>
+          </li>
+          <li class="nav-item a" onclick="getTopic()">
+            <a class="nav-link">DSA Topics</a>
+            <div class="underline"></div>
+          </li>
+        </ul>
+      </div>
 
-            function getIndex(){
-              window.location.href = 'https://dsabrototype.vercel.app'
-            }
+      <script>
 
-            function getCompiler(){
-              window.location.href = 'https://dsabrototype.vercel.app/compiler.html'
-            }
+        function getIndex() {
+          window.location.href = 'https://dsabrototype.vercel.app'
+        }
 
-            function getTopic(){
-              window.location.href = 'https://dsabrototype.vercel.app/topics.html'
-            }
+        function getCompiler() {
+          window.location.href = 'https://dsabrototype.vercel.app/compiler.html'
+        }
 
-          </script>
+        function getTopic() {
+          window.location.href = 'https://dsabrototype.vercel.app/topics.html'
+        }
 
-            
+      </script>
 
-           
-        </div>
-    </nav>
 
-   
-    <section style="padding-top: 75px;">
-      
+
+
+    </div>
+  </nav>
+
+
+  <section style="padding-top: 75px;">
+
 
     <h1
-    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-size: 22px;background-color: rgb(229, 229, 229); padding: 12px; padding-bottom: 16px; font-weight: 500;">
-    Data Structures - <span style="color: chocolate;">Visual</span> Representations</h1>
+      style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-size: 22px;background-color: rgb(229, 229, 229); padding: 12px; padding-bottom: 16px; font-weight: 500;">
+      Data Structures - <span style="color: chocolate;">Visual</span> Representations</h1>
 
 
     <section>
 
-        <div  class="container px-4 py-1" id="custom-cards">
-            <!-- <h2 class="pb-2 border-bottom">Data Structures</h2> -->
-        
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-              <a class="dsas" style="text-decoration: none;" href="array-visualRepresentation.html">
-                <div class="col">
-                    <div  class="card card-cover overflow-hidden text-bg-light rounded-4" style="height: 220px; border: none;">
-                      <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
-                        <p>Array - Visual Representation</p>
-                        <h3 style="color: black;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Array</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                          <li  style="position: relative; top: 12px; " class="me-auto">
-                            <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                            <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
-                          </li>
-                          <li class="d-flex align-items-center me-3">
-                            <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                            <!-- <small>Week1</small> -->
-                          </li>
-                          <li class="d-flex align-items-center">
-                            <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
-                            <p style="color: black; position: relative; top: 18px;">Week 1</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-              </a>
-        
-                          
-              <div class="col">
-                <div  class="card card-cover overflow-hidden text-bg-dark rounded-4" style="height: 220px; border: none;">
-                  <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
-                    <p style="color: white;">Linked List - Visual Representation</p>
-                    <h3 style="color: white;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Linked List</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li style="position: relative; top: 12px;" class="me-auto">
-                        <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                        <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                        <!-- <small>Week1</small> -->
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
-                        <p style="color: white; position: relative; top: 18px;">Week 1</p>
-                      </li>
-                    </ul>
-                  </div>
+      <div class="container px-4 py-1" id="custom-cards">
+        <!-- <h2 class="pb-2 border-bottom">Data Structures</h2> -->
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <a class="dsas" style="text-decoration: none;" href="array-visualRepresentation.html">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-bg-light rounded-4" style="height: 220px; border: none;">
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+                  <p>Array - Visual Representation</p>
+                  <h3 style="color: black;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Array</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li style="position: relative; top: 12px; " class="me-auto">
+                      <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle">
+                      <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
+                      <!-- <small>Week1</small> -->
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                      <p style="color: black; position: relative; top: 18px;">Week 1</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </div>
+          </a>
 
-              <div class="col">
+
+          <a style="text-decoration: none;" href="linkedList-visualRepresention.html">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-bg-dark rounded-4" style="height: 220px; border: none;">
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+                  <p style="color: white;">Linked List - Visual Representation</p>
+                  <h3 style="color: white;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Linked List</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li style="position: relative; top: 12px;" class="me-auto">
+                      <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle">
+                      <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
+                      <!-- <small>Week1</small> -->
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                      <p style="color: white; position: relative; top: 18px;">Week 1</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- <div class="col">
                 <div  class="card card-cover overflow-hidden text-bg-light rounded-4 " style="height: 220px; border: none;">
                   <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
                     <p>Hash Table - Visual Representation</p>
@@ -135,140 +138,140 @@
                     <ul class="d-flex list-unstyled mt-auto">
                       <li style="position: relative; top: 12px;" class="me-auto">
                         <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                        <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                       
                       </li>
                       <li class="d-flex align-items-center me-3">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                        <!-- <small>Week1</small> -->
+                        
                       </li>
                       <li class="d-flex align-items-center">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                       
                         <p style="color: black; position: relative; top: 18px;">Week 1</p>
                       </li>
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <a style="text-decoration: none;" href="bubbleSort.html">
-                <div class="col">
-                  <div  class="card card-cover overflow-hidden text-bg-dark rounded-4" style="height: 220px; border: none;">
-                    <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
-                      <p style="color: white;">Sorting - Visual Representation</p>
-                      <h3 style="color: white;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Sorting</h3>
-                      <ul class="d-flex list-unstyled mt-auto">
-                        <li style="position: relative; top: 12px;" class="me-auto">
-                          <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                          <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                          <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                          <!-- <small>Week1</small> -->
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
-                          <p style="color: white; position: relative; top: 18px;">Week 2</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-             <a style="text-decoration: none;" href="stack-visualRepresentaion.html">
-                <div class="col">
-                    <div  class="card card-cover overflow-hidden text-bg-light rounded-4" style="height: 220px; border: none;">
-                      <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
-                        <p>Stack - Visual Representation</p>
-                        <h3 style="color: black;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Stack</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                          <li style="position: relative; top: 12px;" class="me-auto">
-                            <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                            <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
-                          </li>
-                          <li class="d-flex align-items-center me-3">
-                            <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                            <!-- <small>Week1</small> -->
-                          </li>
-                          <li class="d-flex align-items-center">
-                            <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
-                            <p style="color: black; position: relative; top: 18px;">Week 2</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-             </a>
-
-             <a style="text-decoration: none;" href="queue-visualRepresentation.html">
-              <div class="col">
-                <div  class="card card-cover overflow-hidden text-bg-dark rounded-4" style="height: 220px; border: none;">
-                  <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
-                    <p style="color: white;">Queue - Visual Representation</p>
-                    <h3 style="color: white;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Queue</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li style="position: relative; top: 12px;" class="me-auto">
-                        <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                        <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                        <!-- <small>Week1</small> -->
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
-                        <p style="color: white; position: relative; top: 18px;">Week 2</p>
-                      </li>
-                    </ul>
-                  </div>
+          <a style="text-decoration: none;" href="bubbleSort.html">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-bg-dark rounded-4" style="height: 220px; border: none;">
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+                  <p style="color: white;">Sorting - Visual Representation</p>
+                  <h3 style="color: white;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Sorting</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li style="position: relative; top: 12px;" class="me-auto">
+                      <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle">
+                      <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
+                      <!-- <small>Week1</small> -->
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                      <p style="color: white; position: relative; top: 18px;">Week 2</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
-             </a>
-
-
-             <a style="text-decoration: none;" href="tree-visualRepresentation.html">
-              <div class="col">
-                <div  class="card card-cover overflow-hidden text-bg-light rounded-4" style="height: 220px; border: none;">
-                  <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
-                    <p style="color: black;">Tree - Visual Representation</p>
-                    <h3 style="color: black;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Tree</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                      <li style="position: relative; top: 12px;" class="me-auto">
-                        <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle"> 
-                        <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
-                      </li>
-                      <li class="d-flex align-items-center me-3">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
-                        <!-- <small>Week1</small> -->
-                      </li>
-                      <li class="d-flex align-items-center">
-                        <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
-                        <p style="color: black; position: relative; top: 18px;">Week 3</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-             </a>
-        
-
             </div>
-          </div>
+          </a>
+
+          <a style="text-decoration: none;" href="stack-visualRepresentaion.html">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-bg-light rounded-4" style="height: 220px; border: none;">
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+                  <p>Stack - Visual Representation</p>
+                  <h3 style="color: black;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Stack</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li style="position: relative; top: 12px;" class="me-auto">
+                      <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle">
+                      <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
+                      <!-- <small>Week1</small> -->
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                      <p style="color: black; position: relative; top: 18px;">Week 2</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a style="text-decoration: none;" href="queue-visualRepresentation.html">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-bg-dark rounded-4" style="height: 220px; border: none;">
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+                  <p style="color: white;">Queue - Visual Representation</p>
+                  <h3 style="color: white;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Queue</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li style="position: relative; top: 12px;" class="me-auto">
+                      <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle">
+                      <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
+                      <!-- <small>Week1</small> -->
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                      <p style="color: white; position: relative; top: 18px;">Week 2</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a style="text-decoration: none;" href="tree-visualRepresentation.html">
+            <div class="col">
+              <div class="card card-cover overflow-hidden text-bg-light rounded-4" style="height: 220px; border: none;">
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
+                  <p style="color: black;">Tree - Visual Representation</p>
+                  <h3 style="color: black;" class="pt-0 mt-2 mb-4 display-7 lh-1 fw-bold">Tree</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li style="position: relative; top: 12px;" class="me-auto">
+                      <img src="images/js1.png" alt="Bootstrap" width="34px" class="rounded-circle">
+                      <!-- <img src="/public/python3.jpg" alt="Bootstrap" width="38px" class="">  -->
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg> -->
+                      <!-- <small>Week1</small> -->
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <!-- <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>/ -->
+                      <p style="color: black; position: relative; top: 18px;">Week 3</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
 
     </section>
 
-    </section>
+  </section>
 
-        <script>
-          function loadPage(){
-            localStorage.clear()
-          }
-        </script>
+  <script>
+    function loadPage() {
+      localStorage.clear()
+    }
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"></script>
-        
-    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
