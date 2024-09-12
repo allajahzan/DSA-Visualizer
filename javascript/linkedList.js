@@ -1,33 +1,33 @@
 function loadLinkedListPage() {
 
-    let basic_div = document.getElementById('basic_operations')
-    let special_div = document.getElementById('special_operations')
-    let search_div = document.getElementById('search_operations')
+    // let basic_div = document.getElementById('basic_operations')
+    // let special_div = document.getElementById('special_operations')
+    // let search_div = document.getElementById('search_operations')
 
-    basic_div.style.display = 'none'
-    special_div.style.display = 'none'
-    // set operations
-    let which = localStorage.getItem('which')
+    // basic_div.style.display = 'none'
+    // special_div.style.display = 'none'
+    // // set operations
+    // let which = localStorage.getItem('which')
 
 
-    if (which) {
-        if (which === 'basic') {
-            basic_div.style.display = 'block'
-            special_div.style.display = 'none'
-            search_div.style.display = 'none'
-        } else if (which === 'special') {
-            special_div.style.display = 'block'
-            basic_div.style.display = 'none'
-            search_div.style.display = 'none'
-        } else {
-            search_div.style.display = 'block'
-            special_div.style.display = 'none'
-            basic_div.style.display = 'none'
-        }
-    } else {
-        basic_div.style.display = 'block'
-        special_div.style.display = 'none'
-    }
+    // if (which) {
+    //     if (which === 'basic') {
+    //         basic_div.style.display = 'block'
+    //         special_div.style.display = 'none'
+    //         search_div.style.display = 'none'
+    //     } else if (which === 'special') {
+    //         special_div.style.display = 'block'
+    //         basic_div.style.display = 'none'
+    //         search_div.style.display = 'none'
+    //     } else {
+    //         search_div.style.display = 'block'
+    //         special_div.style.display = 'none'
+    //         basic_div.style.display = 'none'
+    //     }
+    // } else {
+    //     basic_div.style.display = 'block'
+    //     special_div.style.display = 'none'
+    // }
 
     // generate linked list 
     let linkedList = generateRandomLinkedList(3)
