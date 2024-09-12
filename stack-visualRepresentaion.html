@@ -225,6 +225,25 @@
 </section> 
 
 
+<!-- stack with linked list -->
+
+<section id="stack_with_ll" style="display: none;">
+
+    <h1
+    style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; font-size: 22px; background-color: rgb(229, 229, 229); padding: 12px; padding-bottom: 16px; font-weight: 500;">
+    Stack with LinkedList - <span style="color: chocolate;">Visual</span> Representation</h1>
+
+   <div class="container" style="display: flex;flex-direction: column; justify-content: center;  height: 60vh; width: 100%;">
+
+    <li style="font-size: 15px; font-weight: 500;">Push operation involves adding a value to the stack, which corresponds to prepending a new node to the linked list. This means inserting the new value at the beginning of the list.</li>
+    <br>
+    <li style="font-size: 15px; font-weight: 500;">Pop operation involves removing a value from the stack, which corresponds to removing the head node from the linked list. The next node becomes the new head of the list.</li>
+    <br>
+    <a style="text-align: center; font-size: 15px; font-weight: 500;" href="linkedList-visualRepresention.html">For these operations, refer to the LinkedList Visual Representation.</a>
+
+   </div>
+
+</section>
 
 
 <!-- stack with queue part -->
@@ -418,7 +437,7 @@
         withArray_btn.addEventListener('click', () => {
             withArray_div.style.display = 'block'
             withQueue_div.style.display = 'none'
-            // withLL_div.style.display = 'none'
+            withLL_div.style.display = 'none'
             resetAllForms()
 
             note_pad_div.style.display = 'none'
@@ -431,7 +450,7 @@
         withQueue_btn.addEventListener('click', () => {
             withQueue_div.style.display = 'block'
             withArray_div.style.display = 'none'
-            // withLL_div.style.display = 'none'
+            withLL_div.style.display = 'none'
 
             resetAllForms()
             note_pad_div.style.display = 'none'
@@ -441,7 +460,7 @@
         // serach operations btn
 
         withLL_btn.addEventListener('click', () => {
-            // withLL_div.style.display = 'flex'
+            withLL_div.style.display = 'block'
             withQueue_div.style.display = 'none'
             withArray_div.style.display = 'none'
 
