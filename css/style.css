@@ -468,7 +468,7 @@ input {
 
 .sort_value_div {
     height: 100px;
-    width: 45px;
+    width: 52px;
     background-color: rgb(202, 202, 202);
     /* background-color: rgb(173, 216, 230); */
     display: flex;
@@ -491,7 +491,7 @@ input {
     margin-left: 3px;
     margin-right: 3px;
     height: 40px;
-    width: 45px;
+    width: 52px;
     text-align: center;
     display: flex;
     align-items: center;
