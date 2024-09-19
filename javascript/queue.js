@@ -29,7 +29,7 @@ function loadArrayPage() {
         }
     } else {
         withArray_div.style.display = 'block'
-        withLL_div.style.display = 'block'
+        withLL_div.style.display = 'none'
         withQueue_div.style.display = 'none'
     }
 
