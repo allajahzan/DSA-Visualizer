@@ -9,7 +9,6 @@ function loadArrayPage() {
     // set operations
     let which = localStorage.getItem('which')
 
-
     if (which) {
         if (which === 'basic') {
             basic_div.style.display = 'block'
