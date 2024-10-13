@@ -6,7 +6,6 @@ function loadArrayPage() {
 
     basic_div.style.display = 'none'
     special_div.style.display = 'none'
-    // set operations
     let which = localStorage.getItem('which')
 
     if (which) {

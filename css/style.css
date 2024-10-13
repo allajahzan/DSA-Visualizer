@@ -247,7 +247,11 @@ textarea {
     padding-top: 10px;
     padding-left: 10px;
     border: 1px solid rgb(37, 37, 37);
-    ;
+    resize: none; 
+    white-space: pre-wrap; 
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    overflow-x: hidden; 
     border-radius: 4px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -255,7 +259,6 @@ textarea {
     font-family: monospace;
     font-size: 17px;
     line-height: 1.5rem;
-    resize: none;
     transition: border-color 0.3s ease;
     background-color: rgb(37, 37, 37);
     color: white;
